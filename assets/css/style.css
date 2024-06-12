@@ -701,6 +701,11 @@ a {
     margin: 20px 0 10px 0;
 }
 
+.footer .footer-content .list li a:hover {
+    color: #fff;
+    font-weight: 400;
+}
+
 .footer .footer-content .column-footer-1 {
     grid-area: logo;
 }
@@ -725,6 +730,11 @@ a {
 
 .footer .footer-content .column-footer-6 {
     grid-area: touch;
+}
+
+.footer .footer-content .column-footer-6 .media {
+    display: block;
+    margin-top: 20px;
 }
 
 .footer .footer-content .column-footer-7 {
