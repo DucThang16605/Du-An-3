@@ -1,0 +1,786 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: "Sora", sans-serif;
+    font-size: 1.6rem;
+}
+
+/* ================================= Common ====================================== */
+a {
+    text-decoration: none;
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20.5rem;
+    height: 6rem;
+    border-radius: 3rem;
+    background-color: #2e80ce;
+    color: #fff;
+    font-size: 1.8rem;
+}
+
+.btn:hover {
+    opacity: 0.8;
+}
+
+.main-content {
+    width: 1170px;
+    max-width: calc(100% - 48px);
+    margin-left: auto;
+    margin-right: auto;
+}
+/* ================================= Header ====================================== */
+.header {
+    background-color: #10375c;
+}
+
+.header .main-content {
+    height: 80rem;
+}
+
+.header .nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 30px;
+    padding-bottom: 10px;
+    position: sticky;
+    top: -20px;
+    z-index: 1;
+    background-color: #10375c;
+}
+
+.header .menu {
+    display: flex;
+}
+
+.header .menu li .home {
+    display: inline-block;
+    color: #fff;
+    line-height: 2.8rem; /* 175% */
+    padding: 10px 21px;
+    position: relative;
+    font-weight: 500;
+}
+
+.header .menu li .home::before {
+    position: absolute;
+    content: "";
+    display: inline-block;
+    width: 0.6rem;
+    height: 0.6rem;
+    border-radius: 50%;
+    top: 20px;
+    left: 9px;
+    background-color: #fff;
+}
+
+.header .menu li .in-menu {
+    display: inline-block;
+    padding: 10px 21px;
+    color: #c9d2da;
+    font-weight: 300;
+    line-height: 2.8rem; /* 175% */
+}
+
+.header .menu li .in-menu:hover {
+    color: #fff;
+    font-size: 1.7rem;
+    font-weight: 500;
+}
+
+.header .action .log-in {
+    display: inline-block;
+    color: #c9d2da;
+    font-weight: 300;
+    line-height: 2.8rem; /* 175% */
+    padding: 10px 25px;
+}
+
+.header .action .log-in:hover {
+    color: #fff;
+}
+
+.header .action .btn {
+    display: inline-block;
+    width: 10.4rem;
+    height: 4.4rem;
+    border-radius: 2.2rem;
+    font-size: 1.6rem;
+    line-height: 4.4rem; /* 175% */
+    text-align: center;
+}
+
+.hero-content {
+    display: flex;
+    margin-top: 66px;
+}
+
+.hero-left .title {
+    width: 51.7rem;
+    color: #fff;
+    font-size: 7rem;
+    font-weight: 600;
+    line-height: 8rem; /* 114.286% */
+    letter-spacing: -0.14rem;
+}
+
+.hero-left .desc {
+    width: 46.8rem;
+    color: #c9d2da;
+    font-size: 1.8rem;
+    font-weight: 300;
+    line-height: 3rem; /* 166.667% */
+    margin-top: 22px;
+}
+
+.hero-left .booking {
+    display: flex;
+    margin-top: 38px;
+    align-items: center;
+}
+
+.hero-left .booking .hotline {
+    color: #fff;
+    font-size: 1.8rem;
+    line-height: 3rem; /* 166.667% */
+    margin-left: 38px;
+}
+
+.hero-right {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+}
+
+.hero-right img:first-child {
+    width: 33rem;
+    height: 54rem;
+    border-radius: 0.6rem;
+    object-fit: cover;
+}
+
+.hero-right img:last-child {
+    width: 21rem;
+    height: 41rem;
+    border-radius: 0rem 0.6rem 0.6rem 0rem;
+    object-fit: cover;
+}
+
+/* ================================= Services ====================================== */
+.services {
+    margin-top: 170px;
+}
+
+.services .title {
+    color: #10375c;
+    text-align: center;
+    font-size: 5rem;
+    font-weight: 600;
+    line-height: 6rem; /* 120% */
+    letter-spacing: -0.1rem;
+}
+
+.services .desc {
+    width: 46.8rem;
+    color: #575f66;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1.8rem;
+    font-weight: 300;
+    line-height: 3rem; /* 166.667% */
+    text-align: center;
+    margin-top: 18px;
+}
+
+.services-content {
+    margin-top: 70px;
+    display: flex;
+}
+
+.services-content .img-left {
+    width: 57rem;
+    height: 57rem;
+    border-radius: 1.2rem;
+    object-fit: cover;
+}
+
+.all-services {
+    margin-left: auto;
+    margin-top: 26px;
+}
+
+.all-services .teeth {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1rem;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.all-services .teeth:hover {
+    border-radius: 1rem;
+    background: #fff;
+    box-shadow: 0px 14px 28px 0px rgba(0, 0, 0, 0.05);
+    transition: 0.3s;
+}
+
+.item-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+    background-color: #eff6fd;
+    margin-right: 19px;
+    margin-top: -25px;
+    color: #10375c;
+}
+
+.teeth:hover .item-icon {
+    background-color: #2e80ce;
+    color: #fff;
+}
+
+.all-services .teeth .name-service {
+    color: #10375c;
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.all-services .teeth .teeth-desc {
+    width: 35.1rem;
+    color: #575f66;
+    font-weight: 300;
+    line-height: 2.8rem; /* 175% */
+    margin-top: 8px;
+}
+
+.services .btn {
+    margin-top: 55px;
+}
+
+/* ===================================== Works ============================================ */
+
+.works {
+    margin-top: 170px;
+    padding: 100px 0;
+    background-color: #f6fbff;
+}
+.works .title {
+    color: #10375c;
+    font-size: 5rem;
+    font-weight: 600;
+    line-height: 6rem; /* 120% */
+    letter-spacing: -0.1rem;
+}
+
+.works .desc {
+    width: 46.8rem;
+    color: #575f66;
+    font-size: 1.8rem;
+    font-weight: 300;
+    line-height: 3rem; /* 166.667% */
+    margin-top: 18px;
+}
+
+.work-contents {
+    margin-top: 86px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.work-items {
+    padding: 42px;
+    border-radius: 0.4rem;
+    border: 16px solid #eaf6ff;
+}
+
+.work-items .work-title {
+    color: #10375c;
+    font-family: Sora;
+    font-size: 2.6rem;
+    font-weight: 600;
+    line-height: 3.6rem; /* 138.462% */
+    margin-top: 18px;
+}
+
+.work-items .work-desc {
+    width: 25.4rem;
+    color: #575f66;
+    font-family: Sora;
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 2.8rem; /* 175% */
+    margin-top: 28px;
+}
+
+.work-items .learn-more {
+    display: inline-block;
+    color: #575f66;
+    font-weight: 300;
+    line-height: 2.8rem; /* 175% */
+    margin-top: 18px;
+}
+
+.work-items .learn-more:hover {
+    color: #2e80ce;
+}
+
+.work-items:hover {
+    transform: translateY(-16px);
+    border: 16px solid #2e80ce;
+}
+
+/* =========================================== Feature =========================================== */
+
+.features {
+    padding: 170px 0 0 0;
+}
+
+.features .main-content {
+    display: flex;
+}
+
+.feature-left {
+    position: relative;
+}
+
+.features .feature-left img:first-child {
+    width: 51.2rem;
+    height: 37rem;
+    border-radius: 0.6rem;
+    object-fit: cover;
+}
+
+.features .feature-left img:last-child {
+    width: 33.2rem;
+    height: 37rem;
+    border-radius: 0.6rem;
+    object-fit: cover;
+    position: absolute;
+    top: 121px;
+    left: 210px;
+}
+
+.feature-right {
+    margin: 82px 0 0 190px;
+    padding-bottom: 253px;
+}
+
+.feature-right .ft-title {
+    width: 47rem;
+    color: #10375c;
+    font-size: 5rem;
+    font-weight: 600;
+    line-height: 6rem; /* 120% */
+    letter-spacing: -0.1rem;
+}
+
+.feature-right .ft-desc {
+    width: 46.8rem;
+    color: #575f66;
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 3rem; /* 166.667% */
+    margin-top: 18px;
+}
+
+.feature-right .btn {
+    margin-top: 38px;
+}
+
+/* ================================== Dentist ================================== */
+.dentist .dentist-title {
+    color: #10375c;
+    text-align: center;
+    font-size: 5rem;
+    font-weight: 600;
+    line-height: 6rem; /* 120% */
+    letter-spacing: -0.1rem;
+}
+
+.dentist .btn {
+    margin-top: 38px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.dentist .member {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    columns: 270px;
+    margin-top: 70px;
+}
+
+.member .profile .bg-face img {
+    width: 27rem;
+    height: 31.8rem;
+    border-radius: 0.6rem;
+    object-fit: cover;
+}
+
+.member .profile .bg-face img:hover {
+    width: 28rem;
+    height: 32.8rem;
+}
+
+.member .profile .name-dentist {
+    margin-top: 12px;
+    color: #10375c;
+    text-align: center;
+    font-weight: 500;
+    line-height: 2.8rem; /* 175% */
+}
+
+.member .profile .desc-dentist {
+    color: #575f66;
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: 300;
+    line-height: 2.6rem; /* 185.714% */
+}
+
+.pre-next {
+    margin-top: 38px;
+    display: flex;
+    justify-content: center;
+    column-gap: 20px;
+}
+
+.pre-next button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    border: 1px solid #575f66;
+    outline: none;
+    background-color: #fff;
+    color: #575f66;
+}
+
+.pre-next button:last-child {
+    rotate: 180deg;
+}
+
+.pre-next button:hover {
+    background-color: #2e80ce;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* ======================================== Download ================================= */
+
+.download {
+    padding: 270px 0;
+}
+
+.download .main-content {
+    display: flex;
+    background-color: #2e80ce;
+    height: 427px;
+    border-radius: 0.4rem;
+}
+
+.download .phone {
+    margin-left: 70px;
+    display: flex;
+    align-items: flex-end;
+}
+
+.download .details {
+    margin: 75px 70px 75px auto;
+}
+
+.download .details .title {
+    width: 48.9rem;
+    color: #fff;
+    font-size: 5rem;
+    font-weight: 600;
+    line-height: 6rem; /* 120% */
+    letter-spacing: -0.1rem;
+}
+
+.download .details .desc {
+    width: 58.6rem;
+    color: #fff;
+    font-size: 1.8rem;
+    font-weight: 300;
+    line-height: 3rem; /* 166.667% */
+    margin: 18px 0 38px;
+}
+
+.download .store {
+    display: flex;
+    column-gap: 28px;
+}
+
+/* ============================================== News ======================================= */
+.news .main-content {
+    display: flex;
+}
+
+.news .column-title {
+    margin: 68px 0;
+}
+
+.news .column-title .title {
+    width: 47rem;
+    color: #10375c;
+    font-size: 5rem;
+    font-weight: 600;
+    line-height: 6rem; /* 120% */
+    letter-spacing: -0.1rem;
+    margin-bottom: 28px;
+}
+
+.news .column-title .read-blog {
+    display: inline-block;
+    color: #10375c;
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 2.8rem; /* 155.556% */
+    text-decoration: underline;
+}
+
+.news .pre-next {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.news .column-news {
+    display: flex;
+    margin-left: auto;
+    gap: 30px;
+}
+
+.news .column-news .news-content {
+    border-radius: 1.2rem;
+    border: 1px solid #e8ebee;
+    background-color: #fff;
+}
+
+.news .news-content img {
+    width: 27rem;
+    height: 17.2rem;
+    border-radius: 1.2rem 1.2rem 0rem 0rem;
+    object-fit: cover;
+}
+
+.news .news-content .title {
+    width: 22.4rem;
+    color: #10375c;
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 2.6rem; /* 162.5% */
+    margin: 18px 0 10px 22px;
+}
+
+.news .news-content .desc {
+    width: 22.6rem;
+    color: #575f66;
+    font-family: Sora;
+    font-size: 1.4rem;
+    font-weight: 300;
+    line-height: 2.4rem; /* 171.429% */
+    margin-top: 10px;
+    margin: 0 0 12px 22px;
+}
+
+.news .news-content .learn-more {
+    margin-left: 22px;
+    color: #10375c;
+    font-weight: 500;
+    font-size: 1.4rem;
+}
+
+.news .news-content .learn-more:hover {
+    color: #2e80ce;
+}
+
+/* ====================================== Appointment ====================================== */
+.appointment {
+    padding: 170px 0;
+}
+
+.appointment .main-content {
+    padding: 100px 0;
+    background-color: #f6fbff;
+}
+
+.appointment .title {
+    color: #10375c;
+    text-align: center;
+    font-size: 5rem;
+    font-weight: 600;
+    line-height: 6rem; /* 120% */
+    letter-spacing: -0.1rem;
+    margin-top: 100px;
+}
+
+.appointment .hr {
+    margin-left: auto;
+    margin-right: auto;
+    width: 13.6rem;
+    height: 0.2rem;
+    background-color: #2e80ce;
+    margin-top: 18px;
+}
+
+.appointment .desc {
+    margin-left: auto;
+    margin-right: auto;
+    width: 61.7rem;
+    color: #575f66;
+    text-align: center;
+    font-weight: 300;
+    line-height: 2.8rem; /* 175% */
+    margin-top: 18px;
+}
+
+.appointment .btn {
+    margin-top: 38px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* ================================= Footer ================================= */
+.footer {
+    background-color: #10375c;
+    padding-top: 100px;
+}
+
+.footer .footer-content {
+    display: grid;
+    grid-template-areas:
+        "logo support1 support2 touch"
+        "logo support3 support4 sub";
+    column-gap: 78px;
+    row-gap: 10px;
+}
+
+.footer .footer-content .desc {
+    color: #a9b3bb;
+    line-height: 2.8rem; /* 175% */
+    font-weight: 300;
+    width: 33.6rem;
+    margin-top: 22px;
+}
+
+.footer .footer-content .list li a {
+    color: #a9b3bb;
+    line-height: 2.8rem; /* 175% */
+    font-weight: 300;
+    display: block;
+    white-space: pre;
+}
+
+.footer .footer-content .support {
+    color: #fff;
+    font-weight: 600;
+    line-height: 2.8rem; /* 175% */
+}
+
+.footer .footer-content .list li {
+    margin: 20px 0 10px 0;
+}
+
+.footer .footer-content .column-footer-1 {
+    grid-area: logo;
+}
+
+.footer .footer-content .column-footer-2 {
+    grid-area: support1;
+}
+
+.footer .footer-content .column-footer-3 {
+    grid-area: support2;
+}
+
+.footer .footer-content .column-footer-4 {
+    grid-area: support3;
+    margin-top: 28px;
+}
+
+.footer .footer-content .column-footer-5 {
+    grid-area: support4;
+    margin-top: 28px;
+}
+
+.footer .footer-content .column-footer-6 {
+    grid-area: touch;
+}
+
+.footer .footer-content .column-footer-7 {
+    grid-area: sub;
+}
+
+.footer .footer-content .column-footer-7 .email {
+    margin-top: 10px;
+}
+
+.email .send-email {
+    min-width: 21.2rem;
+    min-height: 4.6rem;
+    background: transparent;
+    border-radius: 0.4rem;
+    border: 1px solid #406181;
+    outline: 0.1px solid #406181;
+    color: #9ca8b1;
+    outline: none;
+    padding: 0 10px;
+}
+
+.email .send-email::placeholder {
+    color: #9ca8b1;
+    font-size: 1.4rem;
+    line-height: 1.86;
+}
+
+.footer .hr {
+    width: 117rem;
+    height: 0.1rem;
+    background-color: #406181;
+    margin: 28px auto;
+}
+
+.footer .copyright {
+    color: #aab3ba;
+    text-align: center;
+    font-size: 1.4rem;
+    line-height: 2.6rem; /* 185.714% */
+    padding-bottom: 28px;
+}
+
+.footer .sub {
+    color: #fff;
+    outline: none;
+    width: 10.6rem;
+    height: 4.4rem;
+    border-radius: 0.4rem;
+    background-color: #2e80ce;
+    cursor: pointer;
+    margin-left: 12px;
+    border: 1px solid #2E80CE;
+}
+
+.footer .sub:active {
+    width: 10rem;
+    height: 3.8rem;
+}
